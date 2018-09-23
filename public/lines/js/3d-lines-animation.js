@@ -20,14 +20,14 @@ var mouseX = 0, mouseY = 0,
                 /*
                  *   Define variables
                  */
-                var container, separation = 1000, amountX = 50, amountY = 50, color = 0xffffff,
+                var container, separation = 1000, amountX = 500, amountY = 500, color = 0xffffff,
                 particles, particle;
 
                 container = document.getElementById("canvas");
 
 
                 camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-                camera.position.z = 100;
+                camera.position.z = 10;
 
                 scene = new THREE.Scene();
 
@@ -101,7 +101,7 @@ var mouseX = 0, mouseY = 0,
                 camera.updateProjectionMatrix();
 
                 renderer.setSize( window.innerWidth, window.innerHeight );
-
+                
             }
 
             //
